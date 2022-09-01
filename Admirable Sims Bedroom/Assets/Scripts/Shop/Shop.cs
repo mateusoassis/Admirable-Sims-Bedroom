@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if(other.gameObject.tag == "Player")
+        {
+            if(other.gameObject.TryGetComponent(out PlayerManager playerManager))
+            {
+                playerManager.insideShopArea = true;
+                playerManager.EnableMessageToInteract();
+            }
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnTriggerExit2D(Collider2D other)
     {
-        
+        if(other.gameObject.tag == "Player")
+        {
+            if(other.gameObject.TryGetComponent(out PlayerManager playerManager))
+            {
+                playerManager.insideShopArea = false;
+                playerManager.DisableMessageToInteract();
+            }
+        }
     }
 }

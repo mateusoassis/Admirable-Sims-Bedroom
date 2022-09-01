@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class Wardrobe : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if(other.gameObject.tag == "Player")
+        {
+            if(other.gameObject.TryGetComponent(out PlayerManager playerManager))
+            {
+                playerManager.insideWardrobeArea = true;
+                playerManager.EnableMessageToInteract();
+            }
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnTriggerExit2D(Collider2D other)
     {
-        
+        if(other.gameObject.tag == "Player")
+        {
+            if(other.gameObject.TryGetComponent(out PlayerManager playerManager))
+            {
+                playerManager.insideWardrobeArea = false;
+                playerManager.DisableMessageToInteract();
+            }
+        }
     }
 }

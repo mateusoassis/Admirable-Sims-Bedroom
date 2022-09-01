@@ -1,18 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class MoneyHandler : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private int startingMoney;
+    [SerializeField] private int totalMoney;
+    [SerializeField] private TextMeshProUGUI moneyTextHolder;
+
     void Start()
     {
-        
+        totalMoney = startingMoney;
+        UpdateMoney(0);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void UpdateMoney(int sum)
     {
-        
+        totalMoney += sum;
+        moneyTextHolder.text = totalMoney.ToString();
     }
 }
