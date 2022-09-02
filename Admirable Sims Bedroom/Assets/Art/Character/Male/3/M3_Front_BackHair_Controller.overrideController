@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M3_Front_BackHair_Controller
+  m_Controller: {fileID: 9100000, guid: bf21b68899646244ead5de83cf758c1a, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 2fdc733e959af704989c49b54db70299, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: dd6e7a0253a2cae43ba0001b9dbd5d95, type: 2}
