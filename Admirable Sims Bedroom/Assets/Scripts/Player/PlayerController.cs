@@ -15,7 +15,10 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        MovePlayer();
+        if(!GetComponent<PlayerManager>().isWindowOpen)
+        {
+            MovePlayer();
+        }
     }
 
     private void StoredPlayerInput()

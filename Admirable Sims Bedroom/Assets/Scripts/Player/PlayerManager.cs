@@ -11,13 +11,16 @@ public class PlayerManager : MonoBehaviour
 
     public bool insideShopArea;
     public Shop shop;
+    public ClothesWindowManager clothesWindowManager;
 
     public bool insideWardrobeArea;
     public Wardrobe wardrobe;
 
+    public bool isWindowOpen;
+
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.F))
+        if(Input.GetKeyDown(KeyCode.F) && !isWindowOpen)
         {
             if(insideMoneyPrinterArea)
             {
@@ -25,7 +28,7 @@ public class PlayerManager : MonoBehaviour
             }
             else if(insideShopArea)
             {
-                
+                clothesWindowManager.Open();
             }
             else if(insideWardrobeArea)
             {
