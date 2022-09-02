@@ -6,8 +6,8 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M1_Back_BackHair
-  m_Controller: {fileID: 9100000, guid: 31d0d86d4ca2f0043ae8f9a501ea5085, type: 2}
+  m_Name: M1_Front_BackHair_Controller
+  m_Controller: {fileID: 9100000, guid: bf21b68899646244ead5de83cf758c1a, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: a756e6bb9e245c54f8ebc976524be769, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 2fdc733e959af704989c49b54db70299, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: 4116ff8ce8b5d9047b8e5c68398bbc17, type: 2}

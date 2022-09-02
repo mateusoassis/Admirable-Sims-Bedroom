@@ -6,7 +6,7 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: F1_Back_HeadBody_Controller
+  m_Name: F1_Back_FaceBody_Controller
   m_Controller: {fileID: 9100000, guid: f240cad3475519d4b85ce16e25839718, type: 2}
   m_Clips:
   - m_OriginalClip: {fileID: 7400000, guid: d30104d8b1995074792289c68e184b56, type: 2}

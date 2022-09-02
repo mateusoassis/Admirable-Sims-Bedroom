@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 8994153}
   - component: {fileID: 8994155}
   - component: {fileID: 8994154}
+  - component: {fileID: 8994156}
   m_Layer: 0
   m_Name: Back_Hair
   m_TagString: Untagged
@@ -228,6 +229,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8994156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8994152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5b9ae7ed6f723c48a4495b03c47d321, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  hairOptions:
+  - {fileID: 22100000, guid: ce7bcc2ca53d316469aeca8dd31ce587, type: 2}
+  - {fileID: 9100000, guid: 6e870f3c82b88c64a9a427af23c0875b, type: 2}
+  - {fileID: 22100000, guid: 91aa9c1005fc4894c8a94d9d8cdfcc64, type: 2}
+  - {fileID: 22100000, guid: 291e1a553057f744b8e69073e6aad901, type: 2}
+  - {fileID: 22100000, guid: b5942312a2e0d35478f532868861c609, type: 2}
+  - {fileID: 22100000, guid: 6b754aaa484cc7846a381bba03493a10, type: 2}
+  offsetYFix: 1
+  offsetYAmount: -0.18
 --- !u!1 &63010051
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,6 +397,7 @@ GameObject:
   - component: {fileID: 84049673}
   - component: {fileID: 84049675}
   - component: {fileID: 84049674}
+  - component: {fileID: 84049676}
   m_Layer: 0
   m_Name: Side_FaceBody
   m_TagString: Untagged
@@ -468,6 +492,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &84049676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84049672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cf89c770cd892142b532c284e8b35c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  genderOptions:
+  - {fileID: 22100000, guid: daee33f75993158429d173fe97aada74, type: 2}
+  - {fileID: 9100000, guid: db8ae676a9c05f84eb6584b7a804896c, type: 2}
+  - {fileID: 22100000, guid: 2177352bdc7fba64b89f8dcb9e16fa7a, type: 2}
+  - {fileID: 22100000, guid: a2d7b5f3d212dae409247a4f210e898f, type: 2}
+  - {fileID: 22100000, guid: f5ebc0c418d74094cbf3c72005fe78e9, type: 2}
+  - {fileID: 22100000, guid: 9133e08100729634796c0ec9ae5f279c, type: 2}
+  offsetYFix: 0
+  offsetYAmount: -0.18
 --- !u!1 &98976571
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,12 +525,13 @@ GameObject:
   - component: {fileID: 98976574}
   - component: {fileID: 98976573}
   - component: {fileID: 98976572}
+  - component: {fileID: 98976575}
   m_Layer: 0
   m_Name: Front_Clothes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!95 &98976572
 Animator:
@@ -546,7 +593,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: -361487245, guid: e69178d14f87d4648bbf79e23254cfe3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -566,13 +613,35 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98976571}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.90215683, y: 0.13938904, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1499762042}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &98976575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98976571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ef220b6f3494b4488a1948333651f6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  clothesOptions:
+  - {fileID: 22100000, guid: 48d6195c236166449b3d9ac4c2d97b58, type: 2}
+  - {fileID: 9100000, guid: 742b0662e89a4fb4fb41dca9af516341, type: 2}
+  - {fileID: 22100000, guid: 748f1edc664f4574e89803c2a126b887, type: 2}
+  - {fileID: 22100000, guid: 05a8ebe8ebf22e8429a10efe7b65a929, type: 2}
+  - {fileID: 22100000, guid: c8a4ead1dadcae94396aa8ac6c80be2a, type: 2}
+  - {fileID: 22100000, guid: dcc319641c98d09458575e25ccd9b016, type: 2}
+  offsetYFix: 1
+  offsetYAmount: -0.18
 --- !u!1 &141807599
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,6 +945,7 @@ GameObject:
   - component: {fileID: 342359830}
   - component: {fileID: 342359832}
   - component: {fileID: 342359831}
+  - component: {fileID: 342359833}
   m_Layer: 0
   m_Name: Side_Clothes
   m_TagString: Untagged
@@ -970,6 +1040,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &342359833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342359829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ef220b6f3494b4488a1948333651f6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  clothesOptions:
+  - {fileID: 22100000, guid: e47b0e0bcbf9d784a97d391983ca9626, type: 2}
+  - {fileID: 9100000, guid: 1334072a9f687d54e8d89b9743e4e115, type: 2}
+  - {fileID: 22100000, guid: f8b021060b8ef624f91067312d97809a, type: 2}
+  - {fileID: 22100000, guid: 28d3b6eebf81d4a4f818540cce7aef28, type: 2}
+  - {fileID: 22100000, guid: a3b4f02d4b99e6e4592b6bcca6c041ba, type: 2}
+  - {fileID: 22100000, guid: 7a95d4ef9262ca543b5adc02a57c3410, type: 2}
+  offsetYFix: 0
+  offsetYAmount: -0.18
 --- !u!1 &376135768
 GameObject:
   m_ObjectHideFlags: 0
@@ -1679,7 +1771,6 @@ GameObject:
   - component: {fileID: 700956023}
   - component: {fileID: 700956022}
   - component: {fileID: 700956026}
-  - component: {fileID: 700956025}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -1841,26 +1932,6 @@ MonoBehaviour:
   insideWardrobeArea: 0
   wardrobe: {fileID: 1944354938}
   isWindowOpen: 0
---- !u!95 &700956025
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 700956017}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b941f2f6f9d06d543af7e73bc02e0523, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &700956026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1873,6 +1944,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27f6cf434f90bbe4cae4271ae9f2d940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gender: 4
+  hair: 3
+  clothes: 2
+  hairPickers:
+  - {fileID: 1100585957}
+  - {fileID: 2064344804}
+  - {fileID: 1851815925}
+  - {fileID: 8994156}
+  - {fileID: 1699681084}
+  genderPickers:
+  - {fileID: 1055219056}
+  - {fileID: 84049676}
+  - {fileID: 973106874}
+  clothesPickers:
+  - {fileID: 98976575}
+  - {fileID: 1756385812}
+  - {fileID: 342359833}
+  - {fileID: 766202316}
+  - {fileID: 1393693530}
 --- !u!1 &766202312
 GameObject:
   m_ObjectHideFlags: 0
@@ -1884,6 +1974,7 @@ GameObject:
   - component: {fileID: 766202313}
   - component: {fileID: 766202315}
   - component: {fileID: 766202314}
+  - component: {fileID: 766202316}
   m_Layer: 0
   m_Name: Side_Hands
   m_TagString: Untagged
@@ -1978,6 +2069,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &766202316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766202312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ef220b6f3494b4488a1948333651f6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  clothesOptions:
+  - {fileID: 22100000, guid: e05397b4547e9bb4bac90e381ddbea72, type: 2}
+  - {fileID: 9100000, guid: b7aee92249f249545b0d93458ac98875, type: 2}
+  - {fileID: 22100000, guid: c92e0e813f7b9574591463ba64550a34, type: 2}
+  - {fileID: 22100000, guid: 00eeea42f7f4ba1419d873d62aec43ba, type: 2}
+  - {fileID: 22100000, guid: 34536e3276ebeca4080f6030b429fe6e, type: 2}
+  - {fileID: 22100000, guid: 394806bcbb03b0c4c871f9256ce341a5, type: 2}
+  offsetYFix: 0
+  offsetYAmount: -0.18
 --- !u!1 &820803740
 GameObject:
   m_ObjectHideFlags: 0
@@ -2065,6 +2178,7 @@ GameObject:
   - component: {fileID: 973106871}
   - component: {fileID: 973106873}
   - component: {fileID: 973106872}
+  - component: {fileID: 973106874}
   m_Layer: 0
   m_Name: Back_FaceBody
   m_TagString: Untagged
@@ -2159,6 +2273,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &973106874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973106870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cf89c770cd892142b532c284e8b35c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  genderOptions:
+  - {fileID: 22100000, guid: 6673aeefbd2e2364e9cda37a2f29d869, type: 2}
+  - {fileID: 9100000, guid: f240cad3475519d4b85ce16e25839718, type: 2}
+  - {fileID: 22100000, guid: 86b84aa97d715cc4194905354485680d, type: 2}
+  - {fileID: 22100000, guid: 5946852e6dcde7f479a3ad9266f1357c, type: 2}
+  - {fileID: 22100000, guid: 18d9c581778053f41ba21f3974c412ca, type: 2}
+  - {fileID: 22100000, guid: a2c109431f411514e88a504f2e1918e0, type: 2}
+  offsetYFix: 1
+  offsetYAmount: -0.18
 --- !u!1 &1055219052
 GameObject:
   m_ObjectHideFlags: 0
@@ -2170,6 +2306,7 @@ GameObject:
   - component: {fileID: 1055219055}
   - component: {fileID: 1055219054}
   - component: {fileID: 1055219053}
+  - component: {fileID: 1055219056}
   m_Layer: 0
   m_Name: Front_FaceBody
   m_TagString: Untagged
@@ -2237,7 +2374,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1125370467, guid: e69178d14f87d4648bbf79e23254cfe3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2257,13 +2394,35 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055219052}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.90215683, y: 0.13938904, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1499762042}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1055219056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055219052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cf89c770cd892142b532c284e8b35c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  genderOptions:
+  - {fileID: 22100000, guid: 106df698691727e4280119cf83c859b9, type: 2}
+  - {fileID: 9100000, guid: 3a2679268256f65469c5842ed07601bc, type: 2}
+  - {fileID: 22100000, guid: fbaf31566418fe74ba3d61419cd869d1, type: 2}
+  - {fileID: 22100000, guid: 751b25f23ebd71343a6df8dc6afabd78, type: 2}
+  - {fileID: 22100000, guid: e41b2c39de18ccd41a149bb72a290d48, type: 2}
+  - {fileID: 22100000, guid: 850bfb4d9870bf64aae321ac6f35689d, type: 2}
+  offsetYFix: 1
+  offsetYAmount: -0.18
 --- !u!1 &1070644574
 GameObject:
   m_ObjectHideFlags: 0
@@ -2390,6 +2549,7 @@ GameObject:
   - component: {fileID: 1100585956}
   - component: {fileID: 1100585955}
   - component: {fileID: 1100585954}
+  - component: {fileID: 1100585957}
   m_Layer: 0
   m_Name: Front_BackHair
   m_TagString: Untagged
@@ -2477,13 +2637,35 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1100585953}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.90215683, y: 0.13938904, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1499762042}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1100585957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100585953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5b9ae7ed6f723c48a4495b03c47d321, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  hairOptions:
+  - {fileID: 22100000, guid: b540fe28c21847f4cbbf30a60fd3337f, type: 2}
+  - {fileID: 9100000, guid: bf21b68899646244ead5de83cf758c1a, type: 2}
+  - {fileID: 22100000, guid: 4eacc97a5bb961d499e41139c01594f2, type: 2}
+  - {fileID: 22100000, guid: 47ae5a9046378f24caf4e687ce807d31, type: 2}
+  - {fileID: 22100000, guid: 7854849356d22e64a84ec53ee71768bb, type: 2}
+  - {fileID: 22100000, guid: 5dab2cac3e938a9449d67071d0678ca5, type: 2}
+  offsetYFix: 1
+  offsetYAmount: -0.18
 --- !u!1 &1192833536
 GameObject:
   m_ObjectHideFlags: 0
@@ -2676,6 +2858,7 @@ GameObject:
   - component: {fileID: 1393693527}
   - component: {fileID: 1393693529}
   - component: {fileID: 1393693528}
+  - component: {fileID: 1393693530}
   m_Layer: 0
   m_Name: Back_Clothes
   m_TagString: Untagged
@@ -2770,6 +2953,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1393693530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393693526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ef220b6f3494b4488a1948333651f6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  clothesOptions:
+  - {fileID: 22100000, guid: dfd88b38fe307914e9cc1ba617bcb1c8, type: 2}
+  - {fileID: 9100000, guid: 48e6e84329ac55e40a309a02e570c61e, type: 2}
+  - {fileID: 22100000, guid: c19b5679610e7584590aa53b7d3476bb, type: 2}
+  - {fileID: 22100000, guid: 4b25575457f14154fadc782798b1e2ad, type: 2}
+  - {fileID: 22100000, guid: 6c2767a623ccb984389aa8abed0c970a, type: 2}
+  - {fileID: 22100000, guid: b53201b33851b204f909e78d337323ae, type: 2}
+  offsetYFix: 1
+  offsetYAmount: -0.18
 --- !u!1 &1403255251
 GameObject:
   m_ObjectHideFlags: 0
@@ -3196,6 +3401,7 @@ GameObject:
   - component: {fileID: 1699681081}
   - component: {fileID: 1699681083}
   - component: {fileID: 1699681082}
+  - component: {fileID: 1699681084}
   m_Layer: 0
   m_Name: Back_BackHair
   m_TagString: Untagged
@@ -3290,6 +3496,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1699681084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699681080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5b9ae7ed6f723c48a4495b03c47d321, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  hairOptions:
+  - {fileID: 22100000, guid: aca41c946443a764f8ff2a83b26691ac, type: 2}
+  - {fileID: 9100000, guid: 31d0d86d4ca2f0043ae8f9a501ea5085, type: 2}
+  - {fileID: 22100000, guid: 915443ec26a93bb4a9bd10390354402d, type: 2}
+  - {fileID: 22100000, guid: 223c4f446d4ad2b4394a01bc0e0f98d1, type: 2}
+  - {fileID: 22100000, guid: 9a80034c9277aba4f8e17a2817257767, type: 2}
+  - {fileID: 22100000, guid: 41c9d38a03cf57b44afd0d28c17b776b, type: 2}
+  offsetYFix: 1
+  offsetYAmount: -0.18
 --- !u!1 &1722104813
 GameObject:
   m_ObjectHideFlags: 0
@@ -3396,6 +3624,7 @@ GameObject:
   - component: {fileID: 1756385809}
   - component: {fileID: 1756385811}
   - component: {fileID: 1756385810}
+  - component: {fileID: 1756385812}
   m_Layer: 0
   m_Name: Side_Legs
   m_TagString: Untagged
@@ -3490,6 +3719,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1756385812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756385808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ef220b6f3494b4488a1948333651f6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  clothesOptions:
+  - {fileID: 22100000, guid: 71dc8f023212ce3478c2d2cb366f2731, type: 2}
+  - {fileID: 9100000, guid: 066219bcaad35094b981c361f01839d2, type: 2}
+  - {fileID: 22100000, guid: a8fa459b62af64d4182d81703e811ac9, type: 2}
+  - {fileID: 22100000, guid: 731e66b705b07b44a90a56c25b891257, type: 2}
+  - {fileID: 22100000, guid: 1c4e6a4c5cedf4b4ba5111d866c56ff3, type: 2}
+  - {fileID: 22100000, guid: dcb742016f5f86d448cb6d0549b480e4, type: 2}
+  offsetYFix: 0
+  offsetYAmount: -0.18
 --- !u!1 &1769806781
 GameObject:
   m_ObjectHideFlags: 0
@@ -3893,6 +4144,7 @@ GameObject:
   - component: {fileID: 1851815922}
   - component: {fileID: 1851815924}
   - component: {fileID: 1851815923}
+  - component: {fileID: 1851815925}
   m_Layer: 0
   m_Name: Side_Hair
   m_TagString: Untagged
@@ -3987,6 +4239,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1851815925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851815921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5b9ae7ed6f723c48a4495b03c47d321, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  hairOptions:
+  - {fileID: 22100000, guid: e58e2316f3b16a34680e3eabcd260973, type: 2}
+  - {fileID: 9100000, guid: 8b47ddd62160cd14dbc7f0b8076ab4a3, type: 2}
+  - {fileID: 22100000, guid: ce7496d486f446d4f9941ef2f1cb0087, type: 2}
+  - {fileID: 22100000, guid: dfa47d36ecd2c244f8a89f2dbdd97f48, type: 2}
+  - {fileID: 22100000, guid: 4c9db952a7f9e5646b37ad80cd3d4927, type: 2}
+  - {fileID: 22100000, guid: fc44174c0e46c9d458e91d8cc4e278ab, type: 2}
+  offsetYFix: 0
+  offsetYAmount: -0.18
 --- !u!1 &1917864817
 GameObject:
   m_ObjectHideFlags: 0
@@ -4304,6 +4578,7 @@ GameObject:
   - component: {fileID: 2064344803}
   - component: {fileID: 2064344802}
   - component: {fileID: 2064344801}
+  - component: {fileID: 2064344804}
   m_Layer: 0
   m_Name: Front_Hair
   m_TagString: Untagged
@@ -4371,7 +4646,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 716136866, guid: e69178d14f87d4648bbf79e23254cfe3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4391,13 +4666,35 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064344800}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.90215683, y: 0.13938904, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1499762042}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2064344804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064344800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5b9ae7ed6f723c48a4495b03c47d321, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  hairOptions:
+  - {fileID: 22100000, guid: 47f8acf81038ee646b9a845a79dcc74a, type: 2}
+  - {fileID: 9100000, guid: b8d50917f7837614db6bede5a7b2518a, type: 2}
+  - {fileID: 22100000, guid: 2dd78d3bb93cbcb499865f1c2f05e6e5, type: 2}
+  - {fileID: 22100000, guid: 5a33a75fa5ce9e14f8c1352c98a875bc, type: 2}
+  - {fileID: 22100000, guid: 50f4f6505a0fc02439b6f0af7504e93a, type: 2}
+  - {fileID: 22100000, guid: 7d4a15c55faa0804098c0f7f8476d893, type: 2}
+  offsetYFix: 1
+  offsetYAmount: -0.18
 --- !u!1 &2105909665
 GameObject:
   m_ObjectHideFlags: 0
