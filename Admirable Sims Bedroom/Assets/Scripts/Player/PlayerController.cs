@@ -12,6 +12,11 @@ public class PlayerController : MonoBehaviour
 
     public GameObject[] directions; // 0 sides, 1 top, 2 bottom
 
+    void Start()
+    {
+        EnableSides();
+    }
+
     void Update()
     {
         StoredPlayerInput();
