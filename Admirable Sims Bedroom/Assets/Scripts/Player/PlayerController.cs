@@ -33,33 +33,37 @@ public class PlayerController : MonoBehaviour
 
     private void StoredPlayerInput()
     {
-        float x = Input.GetAxisRaw("Horizontal");
-        
-        
-        float y = Input.GetAxisRaw("Vertical");
+        if(!GetComponent<PlayerManager>().isWindowOpen)
+        {
+            float x = Input.GetAxisRaw("Horizontal");
+            
+            
+            float y = Input.GetAxisRaw("Vertical");
 
-        movementVector = new Vector2(x, y).normalized;
+            movementVector = new Vector2(x, y).normalized;
 
-        if(x > 0.9)
-        {
-            isFacingRight = true;
-            EnableSides();
-        }
-        else if(x < -0.9)
-        {
-            isFacingRight = false;
-            EnableSides();
-        }
         
-        if(x == 0)
-        {
-            if(y > 0.9)
+            if(x > 0.9)
             {
-                EnableTop();
+                isFacingRight = true;
+                EnableSides();
             }
-            else if(y < -0.9)
+            else if(x < -0.9)
             {
-                EnableBottom();
+                isFacingRight = false;
+                EnableSides();
+            }
+            
+            if(x == 0)
+            {
+                if(y > 0.9)
+                {
+                    EnableTop();
+                }
+                else if(y < -0.9)
+                {
+                    EnableBottom();
+                }
             }
         }
     }

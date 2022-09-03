@@ -6,7 +6,10 @@ public class ClothesWindowManager : MonoBehaviour
 {
     [SerializeField] private PlayerManager playerManager;
 
-    
+    void Start()
+    {
+        playerManager.isWindowOpen = true;
+    }
 
     public void Open()
     {
