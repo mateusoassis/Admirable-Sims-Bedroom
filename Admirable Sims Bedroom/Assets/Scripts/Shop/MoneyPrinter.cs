@@ -17,6 +17,12 @@ public class MoneyPrinter : MonoBehaviour
         Instantiate(moneyMessage, moneyMessageSpawn.position, Quaternion.identity);
     }
 
+    public void SpendMoney(int amount)
+    {
+        moneyHandler.UpdateMoney(-amount);
+        GameObject.Find("SoundManager").GetComponent<AudioClipManager>().PlayOneShot("money_sound");
+    }
+
     public void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.tag == "Player")
