@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+using UnityEngine.UI;
 
-public class HairContainer : MonoBehaviour
+public class ClothesContainer : MonoBehaviour
 {
     public MoneyHandler moneyHandler;
     public AnimationManager animationManager;
@@ -114,35 +114,36 @@ public class HairContainer : MonoBehaviour
         {
             if(sixUnlocked[index])
             {
-                EquipHair(index);
+                EquipClothes(index);
             }
             else
             {
                 if(moneyHandler.totalMoney > sixValues[index])
                 {
-                    UnlockHair(index);
+                    UnlockClothes(index);
                 }
                 
             }
         }
     }
 
-    public void EquipHair(int i)
+    public void EquipClothes(int i)
     {
-        ResetHair();
+        ResetClothes();
         sixEquipped[i] = true;
-        animationManager.hair = index;
+        animationManager.clothes = index;
+        animationManager.gender = index;
         animationManager.ChangePlayer();
         UpdateTexts();
     }
-    public void UnlockHair(int i)
+    public void UnlockClothes(int i)
     {
         moneyHandler.UpdateMoney(-sixValues[i]);
         sixUnlocked[i] = true;
         UpdateTexts();
     }
 
-    public void ResetHair()
+    public void ResetClothes()
     {
          for(int i = 0; i < sixTextPositions.Length; i++)
         {
